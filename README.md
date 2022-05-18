@@ -2,15 +2,15 @@
 A real-time operating system for the humble UNO (and Mega2560 etc)
 
 ![Thumbnail (Phone)](https://user-images.githubusercontent.com/20911308/169022328-e084c6d7-bc4f-426a-96e9-ac823039eb91.jpg)  
-See video #244  
+### See video #244 https://youtu.be/s57Xr5LsN60   
 
 [![JLCPCB-Purple](https://user-images.githubusercontent.com/20911308/159024530-3e083ca1-fea4-4ba9-97d3-a3af3fb979d2.png)](https://www.jlcpcb.com/cem)  
 
-So can we run an operating system (task scheduler) on an Arduino Uno in a meaningful way? By "meaningful way" I maean more than just flashing a couple of LEDs. Stay tuned, you may be pleasantly surprised.
+So can we run an operating system (task scheduler) on an Arduino Uno in a meaningful way? By "meaningful way" I mean more than just flashing a couple of LEDs. Stay tuned, you may be pleasantly surprised.😁  
 
 The video demonstrates a simple, two-LED example, before doing something a bit more "meaningful" (something I'm actually doing in a project right now).
 
-► You can now support me by buying me a coffee!
+► You can now support me by buying me a coffee!☕
 https://buymeacoffee.com/ralphbacon  
 
 ### The Arduino loop()
