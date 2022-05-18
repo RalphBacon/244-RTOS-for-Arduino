@@ -10,6 +10,9 @@ So can we run an operating system (task scheduler) on an Arduino Uno in a meanin
 
 The video demonstrates a simple, two-LED example, before doing something a bit more "meaningful" (something I'm actually doing in a project right now).
 
+► You can now support me by buying me a coffee!
+https://buymeacoffee.com/ralphbacon  
+
 ### The Arduino loop()
 
 FreeRTOS can optionally include the standard Arduino loop as part of the RTOS **idle task**. This task only runs when no other task is waiting for processor time, which might mean the loop will never run.
