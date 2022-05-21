@@ -15,7 +15,9 @@ https://buymeacoffee.com/ralphbacon
 
 ### The Arduino loop()
 
-FreeRTOS can optionally include the standard Arduino loop as part of the RTOS **idle task**. This task only runs when no other task is waiting for processor time, which might mean the loop will never run.
+See the sketch entitled "Arduino_RTOS_Blink_With_Loop" for more details on using (or _not_ using) the loop!  
+
+FreeRTOS can optionally include the standard Arduino loop as part of the RTOS **idle task**. This task only runs when no other task is waiting for processor time, which might mean the loop will never run (or very infrequently).
 
 Ideally, include the **void loop()** function, but leave it empty. 
 
@@ -38,6 +40,13 @@ xTaskCreate(
       NULL ); // handle
 ```
 Then you have the same setup as an ESP32. I tend to use the loop() function (*myLoop()* here) as a sort of master control.
+
+### Using delay(ms) - a bad idea!
+See the sketch entitled "Arduino_RTOS_Blink_With_Loop" for more details on how to delay (block) your task for a given period.
+
+It shows the recommended approach to using "**vTaskDelay**" rather than "**delay**" in your RTOS sketches. Note that on an ESP32, RTOS already converts any '**delay**' calls to the required '**vTaskDelay(ms / portTICK_PERIOD_MS)**' (which I erroneously assumed was happening on the Arduino).
+
+Using delay(x) will consume all available processing power for that timeslice for the task, thus preventing the idle task running.
 
 ### Resources
 
