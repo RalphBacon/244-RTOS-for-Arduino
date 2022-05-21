@@ -62,6 +62,9 @@ https://feilipu.me/2015/11/24/arduino_freertos/
 ### Running RTOS on an Arduino Nano Every (ATMega4809)  
 https://tomalmy.com/freertos-on-arduino-nano-every/  
 
+### Advanced RTOS (statically allocated memory using objects)
+https://github.com/Floessie/frt
+
 ► List of all my videos
 (Special thanks to Michael Kurt Vogel for compiling this)  
 http://bit.ly/YouTubeVideoList-RalphBacon
